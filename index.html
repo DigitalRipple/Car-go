@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<title>Car-go</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<style>
+body,h1,h5 {font-family: "Raleway", sans-serif}
+body, html {height: 100%}
+.bgimg {
+  background-image: url('https://pluspng.com/img-png/png-hd-images-of-cars-cars-muscle-cars-1969-monochrome-dodge-charger-rt-1024.png');
+  min-height: 100%;
+  background-position: center;
+  background-size: cover;
+}
+.right{
+font-weight: 1000;
+	text-align: center;
+	color: white;
+}
+</style>
+<body>
+
+<div class="bgimg w3-display-container w3-text-white">
+  <div class="w3-display-middle w3-jumbo">
+    <p class="right">The future of car renting.</p>
+  </div>
+  <div class="w3-display-topleft w3-container w3-xlarge">
+    <p><button onclick="document.getElementById('menu').style.display='block'" class="w3-button w3-black">Pricing (per hour)</button></p>
+    <p><button onclick="document.getElementById('contact').style.display='block'" class="w3-button w3-black">contact</button></p>
+  </div>
+  <div class="w3-display-bottomleft w3-container">
+    <p class="w3-xlarge">Car-go</p>
+    <p class="w3-large">1600 Pennsylvania Ave NW, Washington, DC 20500</p>
+    <p>Find us <a href="https://www.whitehouse.gov/" target="_blank">Here</a></p>
+  </div>
+</div>
+
+<!-- Menu Modal -->
+<div id="menu" class="w3-modal">
+  <div class="w3-modal-content w3-animate-zoom">
+    <div class="w3-container w3-black w3-display-container">
+      <span onclick="document.getElementById('menu').style.display='none'" class="w3-button w3-display-topright w3-large">x</span>
+      <h1>American Muscle</h1>
+    </div>
+    <div class="w3-container">
+      <h5>1968 Ford Mustang Shelby GT500:  <b>$940.99</b></h5>
+      <h5>1969 ½ Dodge Super Bee A12:  <b>$899.99</b></h5>
+      <h5>1969-1971 Baldwin-Motion Phase III GT Corvette:  <b>$980.99</b></h5>
+    </div>
+    <div class="w3-container w3-black">
+      <h1>SUVs</h1>
+    </div>
+    <div class="w3-container">
+      <h5>Toyota RAV4:  <b>$820.99</b></h5>
+      <h5>Mazda CX-3:  <b>$550.99</b></h5>
+      <h5>Nissan Rogue:  <b>$499.99</b></h5>
+      <h5>Ford C-Max:  <b>$650.99</b></h5>
+      <h5>Jeep Renegade:  <b>$500.99</b></h5>
+    </div>
+    <div class="w3-container w3-black">
+      <h1>Electric</h1>
+    </div>
+    <div class="w3-container">
+      <h5>Smart Fortwo:  <b>$550.99</b></h5>
+      <h5>Toyota Prius:  <b>$700.99</b></h5>
+      <h5>Chevy Volt :  <b>$500.99</b></h5>
+      <h5>BMW i3:  <b>$550.99</b></h5>
+    </div>
+  </div>
+</div>
+
+<!-- Contact Modal -->
+<div id="contact" class="w3-modal">
+  <div class="w3-modal-content w3-animate-zoom">
+    <div class="w3-container w3-black">
+      <span onclick="document.getElementById('contact').style.display='none'" class="w3-button w3-display-topright w3-large">x</span>
+      <h1>Contact</h1>
+    </div>
+    <div class="w3-container">
+      <p>Reserve a car and send us a message:</p>
+      <form action="/action_page.php" target="_blank">
+        <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Car" required name="Name"></p>
+        <p><input class="w3-input w3-padding-16 w3-border" type="number" placeholder="Hours" required name="People"></p>
+        <p><input class="w3-input w3-padding-16 w3-border" type="datetime-local" placeholder="Date and time" required name="date" value="2017-11-16T20:00"></p>
+        <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Message \ Special requirements" required name="Message"></p>
+       <a src=""><p><button class="w3-button" type="submit">SEND MESSAGE</button></p></a>
+      </form>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
+
